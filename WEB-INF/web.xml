@@ -1,2 +1,6 @@
 <web-app>
+        <error-page>
+        <error-code>404</error-code>
+        <location>/exception/product_not_found.jsp</location> <!-- 404 에러 처리할 JSP 페이지 경로 -->
+    </error-page>
 </web-app>
