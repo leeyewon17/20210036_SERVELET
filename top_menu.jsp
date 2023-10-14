@@ -6,8 +6,12 @@
     		카테고리
   		</button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">CPU</a>
-        생략….       
+        <a class="dropdown-item" href="#">상의</a>
+        <a class="dropdown-item" href="#">하의</a>
+        <a class="dropdown-item" href="#">가방</a>
+        <a class="dropdown-item" href="#">모자</a>
+        <a class="dropdown-item" href="#">신발</a>
+        <a class="dropdown-item" href="#">악세사리</a>
      </div>
 	</div>
     

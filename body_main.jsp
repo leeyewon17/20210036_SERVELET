@@ -3,7 +3,7 @@
 <%@ page import="dto.Product"%>
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 
-<%! String greeting = "현재 페이지는 VGA 그래픽 카드 상품 목록입니다.";
+<%! String greeting = "W Concept에 오신것을 환영합니다.";
 	String tagline = "하단 페이지 : 확인";%>
 
     <div class="container">
