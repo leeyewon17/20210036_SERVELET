@@ -1,4 +1,5 @@
-<%@ page contentType="text/html; charset=utf-8"%>	
+<%@ page contentType="text/html; charset=utf-8"%>
+<%@ page import="java.util.Date"%>>
 	<footer class="container">
 		<p>&copy; 웹마켓 최하단 상태바<br> 
             
