@@ -48,7 +48,7 @@
 			                            <a href="cart/product_cart.jsp" class="btn btn-warning"> 장바구니 &raquo;</a>
 	            </form>
                 <div class="card bg-dark text-white">
-                    <img src="image/product/64620_77501_1512.jpg" class="card-img" alt="...">
+                    <img src="image/product/<%=product.getFilename()%>" class="card-img" alt="...">
                     <div class="card-img-overlay">
                     <h5 class="card-title">상품 이미지 원본</h5>
                     <p class="card-text">출처 : 구글 검색</p>
