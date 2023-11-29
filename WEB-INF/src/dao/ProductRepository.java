@@ -8,7 +8,7 @@ public class ProductRepository {
     private static ProductRepository instance = new ProductRepository();
 
 	public ProductRepository() {
-		Product phone = new Product("P1234", "LOOKAST", 108,000);
+		Product phone = new Product("P1234", "LOOKAST", 108000);
 		phone.setDescription("위트니 컷아웃 니트 탑 / WHITNEY CUTOUT KNIT TOP_3colors");
 		phone.setCategory("니트");
 		phone.setManufacturer("룩캐스트");
@@ -17,7 +17,7 @@ public class ProductRepository {
         phone.setFilename("p1234.png");
 
         
-        Product notebook = new Product("P1235", "MONGDOL", 248,000);
+        Product notebook = new Product("P1235", "MONGDOL", 248000);
 		notebook.setDescription("에코 퍼 무스탕 자켓 블랙 MDJK025BLACK");
 		notebook.setCategory("무스탕");
 		notebook.setManufacturer("몽돌");
@@ -26,7 +26,7 @@ public class ProductRepository {
         notebook.setFilename("p1235.png");
 
 
-		Product tablet = new Product("P1236", "grove", 128,000);
+		Product tablet = new Product("P1236", "grove", 128000);
 		tablet.setDescription("AILE KNIT [2COLOR]");
 		tablet.setCategory("니트");
 		tablet.setManufacturer("그로브");
