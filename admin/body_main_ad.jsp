@@ -21,7 +21,7 @@
 
         
     <div class="card bg-dark text-white">
-        <img src="../image/product/64620_77501_1512.jpg" class="card-img" alt="...">
+        <img src="image/product/<%=product.getFilename()%>" class="card-img" alt="...">
         <div class="card-img-overlay">
         <h5 class="card-title">그래픽 카드 이미지 샘플</h5>
         <p class="card-text">출처 : 구글 검색</p>

@@ -2,6 +2,7 @@
 <%@ page import="dto.Product"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="example.*" %>
+<%@ page import="dao.ProductRepository"%>
 <%@ page errorPage = "exception/product_not_found.jsp" %>
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 <html>
@@ -31,7 +32,8 @@
 	</div>
 	<%
 		String id = request.getParameter("id");
-		Product product = productDAO.getProductById(id);
+		ProductRepository dao = ProductRepository.getInstance();
+		Product product = dao.getProductById(id); 
 	%>
 	<div class="container">
 		<div class="row">

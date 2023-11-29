@@ -8,30 +8,30 @@ public class ProductRepository {
     private static ProductRepository instance = new ProductRepository();
 
 	public ProductRepository() {
-		Product phone = new Product("P1234", "iPhone 6s", 800000);
-		phone.setDescription("4.7-inch, 1334X750 Renina HD display, 8-megapixel iSight Camera");
-		phone.setCategory("Smart Phone");
-		phone.setManufacturer("Apple");
+		Product phone = new Product("P1234", "LOOKAST", 108,000);
+		phone.setDescription("위트니 컷아웃 니트 탑 / WHITNEY CUTOUT KNIT TOP_3colors");
+		phone.setCategory("니트");
+		phone.setManufacturer("룩캐스트");
 		phone.setUnitsInStock(1000);
 		phone.setCondition("New");
         phone.setFilename("p1234.png");
 
         
-        Product notebook = new Product("P1235", "LG PC 그램", 1500000);
-		notebook.setDescription("13.3-inch, IPS LED display, 5rd Generation Intel Core processors");
-		notebook.setCategory("Notebook");
-		notebook.setManufacturer("LG");
+        Product notebook = new Product("P1235", "MONGDOL", 248,000);
+		notebook.setDescription("에코 퍼 무스탕 자켓 블랙 MDJK025BLACK");
+		notebook.setCategory("무스탕");
+		notebook.setManufacturer("몽돌");
 		notebook.setUnitsInStock(1000);
-		notebook.setCondition("Refurbished");
+		notebook.setCondition("New");
         notebook.setFilename("p1235.png");
 
 
-		Product tablet = new Product("P1236", "Galaxy Tab S", 900000);
-		tablet.setDescription("212.8*125.6*6.6mm,  Super AMOLED display, Octa-Core processor");
-		tablet.setCategory("Tablet");
-		tablet.setManufacturer("Samsung");
+		Product tablet = new Product("P1236", "grove", 128,000);
+		tablet.setDescription("AILE KNIT [2COLOR]");
+		tablet.setCategory("니트");
+		tablet.setManufacturer("그로브");
 		tablet.setUnitsInStock(1000);
-		tablet.setCondition("Old");
+		tablet.setCondition("New");
         tablet.setFilename("p1236.png");
 
 		

@@ -15,6 +15,7 @@ public class Product implements Serializable { // 인터페이스 선언
 	private String condition; 	//신상품 or 중고품 or 재생품
     private String filename; 	// 파일 이름 변수
     private int quantity;	//장바구니에 담은 개수
+    
     public Product() {
 		super();
 	}
