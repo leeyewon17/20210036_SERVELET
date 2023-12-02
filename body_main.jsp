@@ -39,10 +39,10 @@
                 <p class="card-text">출처:W컨셉</p>
                 </div>
                 </div>
-				<h3><%=product.getPname()%></h3> <!--상품 이름-->
-				<p><%=product.getDescription()%> <!--상품 정보-->
-				<p><%=product.getUnitPrice()%>원 <!--상품 가격-->
-                <p><a href="product_detail.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role="button"> 상품 상세 정보 &raquo;</a>
+				<h3><%=rs.getString("p_name")%></h3>
+		        <p><%=rs.getString("p_description")%>
+		        <p><%=rs.getString("p_UnitPrice")%>원
+		        <p><a href="product_detail.jsp?id=<%=rs.getString("p_id")%>" class="btn btn-secondary" role="button"> 상세 정보 &raquo;></a>
 			</div>
 			<%
 				}
