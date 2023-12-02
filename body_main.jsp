@@ -2,6 +2,9 @@
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="dto.Product"%>
 <%@ page import="dao.ProductRepository"%>
+<%@ page import="java.sql.*"%>
+<%@ include file="db/db_conn.jsp"%>
+
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 
 <%! String greeting = "W Concept에 오신것을 환영합니다.";
@@ -23,12 +26,14 @@
 	<div class="container">
 		<div class="row" align="center">
 			<%
-				for (int i = 0; i < listOfProducts.size(); i++) {
-					Product product = listOfProducts.get(i);
-			%>
+		            String sql = "select * from product"; // 조회
+		            pstmt = conn.prepareStatement(sql); // 연결 생성
+		            rs = pstmt.executeQuery(); // 쿼리 실행
+		            while (rs.next()) { // 결과 ResultSet 객체 반복
+	        %>
 			<div class="col-md-4">
                 <div class="card bg-dark text-white">
-                <img src="image/product/<%=product.getFilename()%>" class="card-img" alt="...">
+                <img src="image/product/<%=rs.getString("p_fileName")%>" class="card-img" alt="...">
                 <div class="card-img-overlay">
                 <h5 class="card-title">이미지 샘플</h5>
                 <p class="card-text">출처:W컨셉</p>
