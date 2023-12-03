@@ -48,7 +48,7 @@
 		</div>
 		<hr>
 	</div>
-    <%@ include file="footer.jsp" %>
+    <%@ include file="footer_ad.jsp" %>
 </body>
 </html>
 
