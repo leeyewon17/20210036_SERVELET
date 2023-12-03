@@ -6,7 +6,7 @@
 	ResultSet rs = null;
 	
 	try {
-		String url = "jdbc:mysql://localhost:3306/ggouppang_20210036characterEncoding=utf8";
+		String url = "jdbc:mysql://localhost:3306/ggouppang_20210036?characterEncoding=utf8";
 		String user = "root";
 		String password = "123123";
 
@@ -19,3 +19,4 @@
 	}
 		
 %>
+
