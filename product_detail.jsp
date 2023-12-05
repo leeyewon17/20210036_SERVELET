@@ -4,6 +4,8 @@
 <%@ page import="example.*" %>
 <%@ page import="dao.ProductRepository"%>
 <%@ page errorPage = "exception/product_not_found.jsp" %>
+<%@ page import="java.sql.*"%>
+<%@ include file="db/db_conn.jsp"%>
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 <html>
 <head>
