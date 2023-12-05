@@ -52,15 +52,15 @@
 	pstmt.setString(3, unitPrice);
 	pstmt.setString(4, description);
 	pstmt.setString(5, manufacturer);
-    	pstmt.setString(6, category);
+    pstmt.setString(6, category);
 	pstmt.setString(7, unitsInStock);
 	pstmt.setString(8, condition);
 	pstmt.setString(9, fileName);
 	pstmt.executeUpdate(); // 최종 SQL 쿼리 실행	
 	if (pstmt != null)
- 		pstmt.close();
+ 		            pstmt.close();
  	if (conn != null)
-		conn.close();
+		            conn.close();
 
 	response.sendRedirect("index_ad.jsp");
 %>
