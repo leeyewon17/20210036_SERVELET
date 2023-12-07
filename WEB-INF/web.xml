@@ -9,7 +9,7 @@
     </error-page> -->
     <security-role>
 		<description></description >
-		<role-name>admin</role-name>
+		<role-name>manage</role-name>
 	</security-role>
 	<security-constraint>
 		<display-name>WebMarket Security_01</display-name>
@@ -22,7 +22,7 @@
 		</web-resource-collection>
 		<auth-constraint>
 			<description>권한 관리자명</description>
-			<role-name>admin</role-name>
+			<role-name>manage</role-name>
 		</auth-constraint>
 	</security-constraint>
     <login-config>
